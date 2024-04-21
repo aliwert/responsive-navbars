@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Responsive Navbar</title>
-</head>
-<body>
-  <nav>
-    <ul class="bar">
-      <li onclick="hideCustomSidebar()">
-        <a href="#"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="26"
-            viewBox="0 -960 960 960"
-            width="26"
-          >
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-            /></svg
-        ></a>
-      </li>
-      <li><a href="#">B</a></li>
-      <li><a href="#">C</a></li>
-      <li><a href="#">D</a></li>
-      <li><a href="#">E</a></li>
-      <li><a href="#">F</a></li>
-    </ul>
-    <ul>
-      <li><a href="#">A</a></li>
-      <li class="hide-on-mobile"><a href="#">B</a></li>
-      <li class="hide-on-mobile"><a href="#">C</a></li>
-      <li class="hide-on-mobile"><a href="#">D</a></li>
-      <li class="hide-on-mobile"><a href="#">E</a></li>
-      <li class="hide-on-mobile"><a href="#">F</a></li>
-      <li class="menu-button" onclick="showCustomSidebar()">
-        <a href="#"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="26"
-            viewBox="0 -960 960 960"
-            width="26"
-          >
-            <path
-              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-            /></svg
-        ></a>
-      </li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="bar">
+        <li onclick="hideCustomSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#">B</a></li>
+        <li><a href="#">C</a></li>
+        <li><a href="#">D</a></li>
+        <li><a href="#">E</a></li>
+        <li><a href="#">F</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">A</a></li>
+        <li class="hide-on-mobile"><a href="#">B</a></li>
+        <li class="hide-on-mobile"><a href="#">C</a></li>
+        <li class="hide-on-mobile"><a href="#">D</a></li>
+        <li class="hide-on-mobile"><a href="#">E</a></li>
+        <li class="hide-on-mobile"><a href="#">F</a></li>
+        <li class="menu-button" onclick="showCustomSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
-  <script>
-    function showCustomSidebar() {
-      const customSidebar = document.querySelector(".bar");
-      customSidebar.style.display = "flex";
-    }
+    <script>
+      function showCustomSidebar() {
+        const customSidebar = document.querySelector(".bar");
+        customSidebar.style.display = "flex";
+      }
 
-    function hideCustomSidebar() {
-      const customSidebar = document.querySelector(".bar");
-      customSidebar.style.display = "none";
-    }
-  </script>
-</body>
+      function hideCustomSidebar() {
+        const customSidebar = document.querySelector(".bar");
+        customSidebar.style.display = "none";
+      }
+    </script>
+  </body>
 </html>

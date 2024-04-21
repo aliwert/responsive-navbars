@@ -76,6 +76,7 @@ nav li:first-child {
   }
   .menu-button {
     display: block;
+    transition: right 0.5s ease-in-out;
   }
 }
 
