@@ -10,7 +10,6 @@ body {
 nav {
   padding: 20px 20px;
   background-color: fuchsia;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -24,18 +23,17 @@ nav ul {
 nav li {
   height: 50px;
 }
+.navs {
+  color: white;
+}
 
 nav a {
   height: 100%;
   padding: 0 30px;
   display: flex;
   align-items: center;
-  color: black;
+  color: white;
   text-decoration: none;
-}
-
-nav a:hover {
-  background-color: #f0f0f0;
 }
 
 nav li:first-child {
@@ -50,8 +48,6 @@ nav li:first-child {
   width: 250px;
   z-index: 999;
   background-color: white;
-  backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   align-items: flex-start;
@@ -70,7 +66,16 @@ nav li:first-child {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+  .bar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100vh;
+    background-color: fuchsia;
+  }
+
   .hide-on-mobile {
     display: none;
   }
