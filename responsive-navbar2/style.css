@@ -43,10 +43,10 @@ body {
   background-color: black;
   transition: width 0.3s linear;
   animation-direction: alternate;
-  animation: myfirst 5s 2;
+  animation: animate 5s 2;
   animation-direction: alternate-reverse;
 }
-@keyframes myfirst {
+@keyframes animate {
   0% {
     background: red;
     left: 0px;
